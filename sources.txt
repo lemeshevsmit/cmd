@@ -1,0 +1,5 @@
+./src/main/java/com/solution/lemeshev/App.java
+./src/main/java/com/solution/lemeshev/database/PersonRepository.java
+./src/main/java/com/solution/lemeshev/entity/enums/Role.java
+./src/main/java/com/solution/lemeshev/entity/Person.java
+./src/main/java/com/solution/lemeshev/service/PersonService.java

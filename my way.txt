@@ -1,0 +1,27 @@
+linux:
+
+find -name "*.java" > sources.txt
+javac -d target/classes/ @sources.txt
+cd target/classes/
+java com/solution/lemeshev/App
+
+windows:
+
+dir /s /B *.java > sources.txt
+javac -d target/classes/ @sources.txt
+cd target/classes/
+java com/solution/lemeshev/App
+
+create mainfest file bash
+
+cat > manifest.mf <<EOF
+Manifest-Version: 1.0
+Main-Class: com/solution/lemeshev/App
+Class-Path: target/classes/
+EOF
+
+create jar 
+jar -cmf manifest.mf MyApp.jar -C target/classes/ .
+
+
+java -jar MyApp.jar
